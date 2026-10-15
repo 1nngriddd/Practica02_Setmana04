@@ -1,0 +1,68 @@
+.formulari {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formulari label {
+  font-weight: 600;
+  color: var(--text-suau);
+  font-size: 0.95rem;
+}
+
+.formulari input[type="text"],
+.formulari input:not([type]),
+.formulari select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--rosa-mig);
+  border-radius: 10px;
+  background: var(--rosa-blanc);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.formulari input:focus,
+.formulari select:focus {
+  border-color: var(--rosa);
+  box-shadow: 0 0 0 3px var(--rosa-clar);
+}
+
+.formulari .error {
+  min-height: 1.2em;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+.formulari .check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 12px;
+}
+
+.formulari input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--rosa);
+}
+
+.formulari button[type="submit"] {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: var(--rosa);
+  color: var(--blanc);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.formulari button[type="submit"]:hover {
+  background: var(--rosa-fosc);
+  box-shadow: var(--ombra);
+}
+
+.formulari button[type="submit"]:active {
+  transform: scale(0.98);
+}

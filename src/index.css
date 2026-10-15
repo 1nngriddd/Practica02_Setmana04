@@ -1,0 +1,31 @@
+:root {
+  --rosa-fosc: #c2185b;
+  --rosa: #e8558e;
+  --rosa-mig: #f7a8c4;
+  --rosa-clar: #fde4ee;
+  --rosa-blanc: #fff5f9;
+  --blanc: #ffffff;
+  --text: #4a2035;
+  --text-suau: #8a5a70;
+  --ombra: 0 8px 24px rgba(194, 24, 91, 0.10);
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--rosa-blanc);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
